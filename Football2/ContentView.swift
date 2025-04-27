@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Football2
 //
-//  Created by Yehua Zhang on 4/26/25.
+//  Created by Yehua Zhang on 4/25/25.
 //
 
 import SwiftUI
@@ -10,10 +10,31 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("What is Football to You?")
+                .font(.largeTitle)
+                .fontWeight(.thin)
+                .padding(.bottom)
+                .foregroundStyle(.green)
+            HStack {
+                Image(systemName: "figure.american.football")
+                    .resizable()
+                    .scaledToFit()
+                    .imageScale(.large)
+                    .foregroundStyle(.blue)
+                Image(systemName: "figure.australian.football")
+                    .resizable()
+                    .scaledToFit()
+
+                    .imageScale(.large)
+                    .foregroundStyle(.indigo)
+                Image(systemName: "figure.indoor.soccer")
+                    .resizable()
+                    .scaledToFit()
+                    .imageScale(.large)
+                    .foregroundStyle(.purple)
+            }
+            .scaledToFit()
+            
         }
         .padding()
     }
